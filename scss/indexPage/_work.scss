@@ -1,0 +1,188 @@
+.work{
+    .work-swipper{
+        margin-top: 35px;
+
+        .swiper-wrapper{
+            position: relative;
+          }
+          .swiper-button-next::after {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: $whiteColor;
+            @include d-center;
+            color: $textColor;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            font-size: 14px;
+          }
+          .swiper-button-next{
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          .swiper-button-prev{
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          .swiper-button-next:hover::after {
+            background-color: $primaryColor;
+            color: $whiteColor;
+          }
+          .swiper-button-prev:hover::after {
+            background-color: $primaryColor;
+            color: $whiteColor;
+          }
+          .swiper-button-prev::after {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: $whiteColor;
+            @include d-center;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            color: $textColor;
+            font-size: 14px;
+          }
+          .swiper-pagination {
+            .swiper-pagination-bullet {
+              background-color: $primaryColor;
+            }
+          }
+    }
+}
+
+.work-item{
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    &:hover{
+        border: 1px solid #c3c3c3cb;
+    }
+     .work-img{
+        height: 200px;
+        width: 100%;
+        position: relative;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .overly{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0,0,0,0.2);
+            @include d-center;
+            ion-icon{
+                font-size: 50px;
+                color: $whiteColor;
+            }
+        }
+     }
+     .work-content{
+        padding: 12px;
+        h5{
+            @include text-ellips-2;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+     }
+}
+
+.company-work{
+    padding: 50px 0 80px 0;
+    position: relative;
+    z-index: 1;
+    margin-top: 60px;
+    .overly {
+        z-index: 1;
+        background-image: linear-gradient(267deg,#fff 7%,transparent 53%,#fff 93%);
+        width: auto;
+        display: block;
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+    }
+    .comapny-swipper{
+        margin-top: 40px;
+        .swiper-wrapper {
+            transition-timing-function: linear;
+        }
+        .swiper-slide {
+            height: auto;
+            max-height: 100px;
+            width: auto;
+            max-width: 200px;
+          }
+    }
+
+}
+
+.logo-item{
+    height: 50px;
+    width: 100%;
+    img { 
+        box-sizing: border-box;
+        filter: grayscale(100%);
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    &:hover img{
+        filter: grayscale(0%);
+    }
+}
+
+.cta{
+    padding: 60px 0;
+    .cta-wrapper{
+        max-width: 950px;
+        margin: 0 auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 30px;
+        padding: 80px 40px;
+        h2{
+            font-size: 50px;
+            line-height: 62px;
+            color: $whiteColor;
+            font-weight: 500;
+            font-family: $secondaryFont;
+        }
+        p{
+            color: $whiteColor;
+        }
+        .cta-btn{
+            @include common-btn;
+            background-color: $whiteColor;
+            color: $primaryColor;
+            margin-top: 30px;
+            padding: 8px 25px;
+            font-size: 16px;
+            font-weight: 500;
+            &:hover{
+                color: $whiteColor;
+                background-color: #f3f3f32c;
+            }
+        }
+        .round-shape{
+            display: flex;
+            justify-content: center;
+            img{
+                max-height: 220px;
+                max-width: auto;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+.cta-extra-padding{
+    padding: 60px 0 100px 0;
+} 

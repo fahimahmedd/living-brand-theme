@@ -1,0 +1,33 @@
+.header{
+  background-color: $whiteColor;
+  border-bottom: 1px solid #c3c3c3b4;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+    .header-wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .logo{
+        img{
+          max-height: 85px;
+          max-width: 120px;
+          object-fit: contain
+        }
+      }
+      .common-btn{
+        @include common-btn; 
+      }
+    }
+}
+
+
+.body-main-content{
+  background-color: $whiteColor;
+  margin-bottom: 500px;
+  position: relative;
+  z-index: 2;
+}

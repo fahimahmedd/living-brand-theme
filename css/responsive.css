@@ -1,0 +1,117 @@
+@media (min-width: 280px) and (max-width: 991.98px){
+    .header .header-wrapper .logo img {
+        max-height: 75px;
+    }
+    .hero {
+        padding: 130px 0;
+    }
+    .hero .hero-wrapper .hero-text h1 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+    .hero-img{
+        margin-top: 10px;
+    }
+    .about .about-wrapper .about-arrow img {
+        max-height: 100px;
+    }
+    .work-item {
+        margin-bottom: 20px;
+    }
+    .work-item .work-content {
+        padding: 8px 8px 4px 8px;
+    }
+    .company-work {
+        padding: 50px 0 50px 0;
+        margin: 20px 0;
+    }
+    .work h2{
+        font-size: 28px;
+    }
+    .work .work-swipper {
+        margin-top: 20px;
+    }
+    .company-work h2{
+        font-size: 28px;
+    }
+    .work {
+        padding-bottom: 0px;
+    }
+    .company-work .comapny-swipper {
+        margin-top: 20px;
+    }
+    .cta .cta-wrapper {
+        padding: 20px 20px;
+    }
+    .cta .cta-wrapper h2 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+    .feature-wrapper .swiper-slide {
+        height: 90vh;
+        max-height: 650px;
+        width: 90%;
+        max-width: 90%;
+    }
+    .cta .cta-wrapper .round-shape {
+        margin-top: 10px;
+    }
+    .footer .footer-bottom .footer-icon {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .footer .footer-bottom .footer-icon a {
+        margin-right: 0px;
+        margin: 0 6px;
+        line-height: 0px;
+    }
+    .footer .footer-bottom  .text-end{
+        text-align: center !important;
+    }
+    .footer {
+        padding: 100px 0 0 0;
+        margin-top: 80px;
+    }
+    .footer .footer-wrapper {
+        padding-bottom: 90px;
+    }
+    .logo-item {
+        height: 35px;
+    }
+    .footer .footer-wrapper .logo img {
+        max-height: 200px;
+    }
+    .footer .footer-bottom span {
+        display: inherit;
+    }
+}
+@media (min-width: 575px) and (max-width: 767.98px){
+    .feature-wrapper .swiper-slide {
+        height: 90vh;
+        max-height: 650px;
+        width: 60%;
+        max-width: 60%;
+    }
+    .cta .cta-wrapper h2 {
+        font-size: 50px;
+        line-height: 62px;
+    }
+    .cta .cta-wrapper {
+        padding: 80px 40px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+    .feature-wrapper .swiper-slide {
+        height: 90vh;
+        max-height: 650px;
+        width: 40%;
+        max-width: 40%;
+    }
+    .cta .cta-wrapper h2 {
+        font-size: 50px;
+        line-height: 62px;
+    }
+    .cta .cta-wrapper {
+        padding: 80px 40px;
+    }
+}

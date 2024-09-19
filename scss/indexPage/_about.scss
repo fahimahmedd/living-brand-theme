@@ -1,0 +1,43 @@
+.about {
+  .about-wrapper {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .about-arrow {
+      img {
+        max-height: 180px;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    h2 {
+      font-family: $secondaryFont;
+      font-weight: 700;
+    }
+    h3{
+      color: $primaryColor
+    }
+    .about-btn {
+      @include common-btn;
+    }
+
+    p {
+      padding: 15px 0;
+    }
+  }
+}
+
+.player-section {
+  display: flex;
+  justify-content: center;
+  .vedio-player {
+    height: auto;
+    width: auto;
+    video {
+      max-width: 100%;
+      max-height: 100%;
+      // object-fit: ;
+    }
+  }
+}

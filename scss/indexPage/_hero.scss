@@ -1,0 +1,23 @@
+.hero {
+  padding: 150px 0;
+  .hero-wrapper {
+    .hero-text {
+      h1 {
+        font-weight: 600;
+        color: $primaryColor;
+        font-size: 70px;
+        line-height: 82px;
+      }
+      .hero-btn {
+        @include common-btn;
+      }
+    }
+    .hero-img {
+      img {
+        max-height: 450px;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}

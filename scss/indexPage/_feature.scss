@@ -1,0 +1,140 @@
+.feature-wrapper {
+  .swiper-wrapper{
+    position: relative;
+  }
+  .swiper-button-next::after {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: $primaryColor;
+    @include d-center;
+    color: $whiteColor;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 20px;
+  }
+  .swiper-button-next{
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .swiper-button-prev{
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .swiper-button-next:hover::after {
+    background-color: $whiteColor;
+    color: $primaryColor;
+  }
+  .swiper-button-prev:hover::after {
+    background-color: $whiteColor;
+    color: $primaryColor;
+  }
+  .swiper-button-prev::after {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: $primaryColor;
+    @include d-center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: $whiteColor;
+    font-size: 20px;
+  }
+
+
+  .swiper-wrapper {
+    transition-timing-function: linear;
+}
+  .swiper-slide {
+    height: 100vh;
+    max-height: 650px;
+    width: 30%;
+    max-width: 500px;
+  }
+}
+.feature-card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  @include d-center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-left: 1px solid #c3c3c370;
+  border-right: 1px solid #c3c3c370;
+  &:hover{
+    transition: $transition;
+  }
+  &:hover p{
+    opacity: 1;
+    left: 0;
+  }
+  &:hover h2{
+    color: $whiteColor;
+  }
+  h2 {
+    color: rgb(212, 216, 221);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  p {
+    color: #fff;
+    margin-top: 20px;
+    opacity: 0;
+    position: relative;
+    left: -400px;
+  }
+}
+
+.color-1{
+  &:hover{
+    background-color: #013438;
+  }
+}
+.color-2{
+  &:hover{
+    background-color: #065866;
+  }
+}
+.color-3{
+  &:hover{
+    background-color: #078E92;
+  }
+}
+.color-4{
+  &:hover{
+    background-color: #FE3967;
+  }
+}
+.color-5{
+   &:hover{
+     background-color: #FE6584;
+   }
+}
+.color-6{
+    &:hover{
+      background-color: #F19200;
+    }
+}
+.color-7{
+  &:hover{
+    background-color: #24807F;
+  }
+}
+.color-8{
+    &:hover{
+      background-color: #41BBAC;
+    }
+}
+.color-9{
+  &:hover{
+    background-color: #1D7791;
+  }
+}
+.color-10{
+  &:hover{
+    background-color: #2D8FAB;
+  }
+}
+
+
